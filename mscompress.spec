@@ -8,7 +8,6 @@ Group:		Archiving/Compression
 Url:        ftp://ftp.penguin.cz/pub/users/mhi/mscompress
 Source0:	ftp://ftp.penguin.cz/pub/users/mhi/mscompress/%{name}-%{version}.tar.bz2
 BuildRequires:	autoconf
-BuildRoot:  %{_tmppath}/%{name}-buildroot
 
 %description
 Microsoft compress.exe/expand.exe-compatible file (de)compressor.
