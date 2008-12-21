@@ -2,13 +2,14 @@ Summary:	MS compress/expand-compatible (de)compressor
 Summary(pl):	(De)kompresor zgodny z MS compress/expand
 Name:		mscompress
 Version:	0.3
-Release:	%mkrel 8
+Release:	%mkrel 9
 License:	GPL
 Group:		Archiving/Compression
 Url:        ftp://ftp.penguin.cz/pub/users/mhi/mscompress
 Source0:	ftp://ftp.penguin.cz/pub/users/mhi/mscompress/%{name}-%{version}.tar.bz2
+Patch0:		mscompress-0.3-LDFLAGS.diff
 BuildRequires:	autoconf
-BuildRoot:  %{_tmppath}/%{name}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Microsoft compress.exe/expand.exe-compatible file (de)compressor.
@@ -19,10 +20,11 @@ Microsoftu.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 autoconf
-%configure
+%configure2_5x
 %make
 
 %install
