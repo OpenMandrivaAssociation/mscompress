@@ -23,7 +23,6 @@ Microsoftu.
 %patch0 -p0
 
 %build
-autoconf
 %configure2_5x
 %make
 
