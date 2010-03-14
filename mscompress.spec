@@ -2,7 +2,7 @@ Summary:	MS compress/expand-compatible (de)compressor
 Summary(pl):	(De)kompresor zgodny z MS compress/expand
 Name:		mscompress
 Version:	0.3
-Release:	%mkrel 10
+Release:	%mkrel 11
 License:	GPL
 Group:		Archiving/Compression
 Url:        ftp://ftp.penguin.cz/pub/users/mhi/mscompress
