@@ -27,14 +27,14 @@ Microsoftu.
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
+rm -rf %{buildroot}
+install -d %{buildroot}{%{_bindir},%{_mandir}/man1}
 
-install mscompress msexpand $RPM_BUILD_ROOT%{_bindir}
-install mscompress.1 msexpand.1 $RPM_BUILD_ROOT%{_mandir}/man1
+install mscompress msexpand %{buildroot}%{_bindir}
+install mscompress.1 msexpand.1 %{buildroot}%{_mandir}/man1
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
