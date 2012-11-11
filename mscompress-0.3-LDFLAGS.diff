@@ -1,0 +1,20 @@
+--- Makefile.in	2000-04-15 14:50:28.000000000 +0200
++++ Makefile.in.oden	2008-12-21 22:32:14.000000000 +0100
+@@ -1,6 +1,6 @@
+ CC = @CC@
+ CFLAGS = @CFLAGS@
+-
++LDFLAGS = @LDFLAGS@
+ 
+ VERS   = @VERSION@
+ OSTYPE = @OS_TYPE@
+@@ -37,7 +37,7 @@
+ 	bzip2 -9f $(OUTDIR)/mscompress-$(VERS)-$(OSTYPE).tar
+ 
+ mscompress:	mscompress.o version.o
+-	$(CC) -o mscompress mscompress.o version.o
++	$(CC) $(CFLAGS) $(LDFLAGS) -o mscompress mscompress.o version.o
+ 
+ msexpand:	msexpand.o version.o
+-	$(CC) -o msexpand msexpand.o version.o
++	$(CC) $(CFLAGS) $(LDFLAGS) -o msexpand msexpand.o version.o
