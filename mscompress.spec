@@ -1,7 +1,7 @@
 Summary:	MS compress/expand-compatible (de)compressor
 Name:		mscompress
 Version:	0.3
-Release:	17
+Release:	18
 License:	GPLv2
 Group:		Archiving/Compression
 Url:		ftp://ftp.penguin.cz/pub/users/mhi/mscompress
