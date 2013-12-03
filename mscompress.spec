@@ -1,11 +1,11 @@
 Summary:	MS compress/expand-compatible (de)compressor
 Name:		mscompress
-Version:	0.3
-Release:	18
+Version:	0.4
+Release:	1
 License:	GPLv2
 Group:		Archiving/Compression
 Url:		ftp://ftp.penguin.cz/pub/users/mhi/mscompress
-Source0:	ftp://ftp.penguin.cz/pub/users/mhi/mscompress/%{name}-%{version}.tar.bz2
+Source0:	http://code.stapelberg.de/git/mscompress/snapshot/%{name}-%{version}.tar.bz2
 Patch0:		mscompress-0.3-LDFLAGS.diff
 
 %description
@@ -29,4 +29,5 @@ install mscompress.1 msexpand.1 %{buildroot}%{_mandir}/man1
 %doc ChangeLog README TODO format.txt
 %{_bindir}/*
 %{_mandir}/man1/*
+
 
