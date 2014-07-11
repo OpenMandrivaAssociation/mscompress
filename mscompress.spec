@@ -1,7 +1,7 @@
 Summary:	MS compress/expand-compatible (de)compressor
 Name:		mscompress
 Version:	0.4
-Release:	6
+Release:	7
 License:	GPL
 Group:		Archiving/Compression
 Url:        ftp://ftp.penguin.cz/pub/users/mhi/mscompress
