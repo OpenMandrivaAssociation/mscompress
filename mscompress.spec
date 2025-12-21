@@ -6,6 +6,10 @@ License:	GPL
 Group:		Archiving/Compression
 Url:        ftp://ftp.penguin.cz/pub/users/mhi/mscompress
 Source0:	http://code.stapelberg.de/git/mscompress/snapshot/%{name}-%{version}.tar.bz2
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	autoconf
 
 %description
